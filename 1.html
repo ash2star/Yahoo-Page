@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Yahoo!</title>
+<style>
+a{
+text-decoration:none;
+}
+body{
+background-color: #e6ecff;
+}
+</style>
+<script>
+setInterval(Myfuction,1000);
+function Myfuction(){
+var x= Math.round(Math.random()*14);
+var img1="<img src='images/ads/ad_1.png'>";
+var img2="<img src='images/ads/ad_2.png'>";
+var img3="<img src='images/ads/ad_3.png'>";
+var img4="<img src='images/ads/ad_4.png'>";
+var img5="<img src='images/ads/ad_5.png'>";
+var img6="<img src='images/ads/ad_6.png'>";
+var img7="<img src='images/ads/ad_7.png'>";
+
+if(x<=2){
+document.getElementById("Ad").innerHTML=img1;
+}
+else if(x<=4){
+document.getElementById("Ad").innerHTML=img2;
+}
+else if(x<=6){
+document.getElementById("Ad").innerHTML=img3;
+}
+else if(x<=8){
+document.getElementById("Ad").innerHTML=img4;
+}
+else if(x<=10){
+document.getElementById("Ad").innerHTML=img5;
+}
+else if(x<=12){
+document.getElementById("Ad").innerHTML=img6;
+}
+else{
+document.getElementById("Ad").innerHTML=img7;
+}
+}
+
+function video1(){
+var vid1="<video src='videos/video1.mp4' type='video/mp4' controls autoplay>";
+document.getElementById("Vids").innerHTML=vid1;
+}
+
+function video2(){
+var vid2="<video src='videos/video2.mp4' type='video/mp4' controls autoplay>";
+document.getElementById("Vids").innerHTML=vid2;
+}
+
+function video3(){
+var vid3="<video src='videos/Fifth Harmony - Sledgehammer.mp4' type='video/mp4' width='320px' height='240px' controls autoplay>";
+document.getElementById("Vids").innerHTML=vid3;
+}
+
+function video4(){
+var vid4="<video src='videos/WhistleMaar.mp4' type='video/.mp4' width='320px' height='240px' controls autoplay>";
+document.getElementById("Vids").innerHTML=vid4;
+}
+
+function cat1(){
+var ca1="<ul><a href='#'><li>News from the Globe</li></a><a href='#'><li>Football</li></a><a href='#'><li>Cricket</li></a><a href='#'><li>Tennis</li></a><a href='#'><li>Hockey</li></a></ul>";
+document.getElementById("area").innerHTML=ca1;
+document.getElementById("c1").style.color = "#0033cc";
+document.getElementById("c2").style.color = "#00134d";
+document.getElementById("c3").style.color = "#00134d";
+document.getElementById("c4").style.color = "#00134d";
+}
+
+function cat2(){
+var ca2="<ul><a href='#'><li>George of the Jungle</li></a><a href='#'><li>Football</li></a><a href='#'><li>Cricket</li></a><a href='#'><li>Tennis</li></a><a href='#'><li>Hockey</li></a></ul>";
+document.getElementById("area").innerHTML=ca2;
+document.getElementById("c1").style.color = "#00134d";
+document.getElementById("c2").style.color = "#0033cc";
+document.getElementById("c3").style.color = "#00134d";
+document.getElementById("c4").style.color = "#00134d";
+}
+
+function cat3(){
+var ca3="<ul><a href='#'><li>Jungle Book</li></a><a href='#'><li>Football</li></a><a href='#'><li>Cricket</li></a><a href='#'><li>Tennis</li></a><a href='#'><li>Hockey</li></a></ul>";
+document.getElementById("area").innerHTML=ca3;
+document.getElementById("c1").style.color = "#00134d";
+document.getElementById("c2").style.color = "#00134d";
+document.getElementById("c3").style.color = "#0033cc";
+document.getElementById("c4").style.color = "#00134d";
+}
+
+function cat4(){
+var ca4="<ul><a href='#'><li>FindinG Dory</li></a><a href='#'><li>Football</li></a><a href='#'><li>Cricket</li></a><a href='#'><li>Tennis</li></a><a href='#'><li>Hockey</li></a></ul>";
+document.getElementById("area").innerHTML=ca4;
+document.getElementById("c1").style.color = "#00134d";
+document.getElementById("c2").style.color = "#00134d";
+document.getElementById("c3").style.color = "#00134d";
+document.getElementById("c4").style.color = "#0033cc";
+}
+</script>
+<link type="text/css" rel="stylesheet" href="themes/base.css"/>
+<link type="text/css" rel="stylesheet" href="themes/default/theme.css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.accessible-news-slider.js"></script>
+<script type="text/javascript">
+// when the DOM is ready, convert the feed anchors into feed content
+jQuery(document).ready(function() {
+
+	jQuery('#newsslider2').accessNews({
+		title : "BREAKING NEWS:",
+		subtitle:"stories from the internet",
+		speed : "slow",
+		slideBy : 4,
+		slideShowInterval: 3000,
+		slideShowDelay: 3000
+	});
+
+});
+</script>
+</head>
+
+<body>
+<div style="margin-top:10px;"><!-- top part main div-->
+<div style="float:left; margin-left:150px; margin-right:30px; height: 165px;" class="intro"><!--sub div 1-->
+<p><a href="#"><img src="images\y_homepage.png"/>Make Y! your homepage</a></p>
+<p><img src="images\main_logo_1.png" width="" height=""></p>
+<p>Monday 20 June 2016 &nbsp;&nbsp;<a href="#">Yahoo.com</a></p>
+</div><!--sub div 1 ends here-->
+<div style="float:left; width:805px;" class="intro"><!--sub div 2-->
+<p style="float:left;"><a href="#">Web</a>&nbsp;&nbsp;<a href="#">Images</a>&nbsp;&nbsp;<a href="#">Videos</a>&nbsp;&nbsp;<a href="#">Local</a>&nbsp;&nbsp;<a href="#">News</a>&nbsp;&nbsp;<a href="#">More</a></p><br>
+<p><table style="border:1px double #ccccff;">
+<tr>
+<td><input style="height:25px; width:500px; border: 3px double #ccccff;" type="text"></td>
+<td><button style="height:30px; width:80px; background-color: #ffff4d; width:150px; padding: 5px; border: 1px solid black;"><b>Search</b></button></td>
+</tr>
+<table>
+</p>
+<p style="float:left; margin-top: -10px;">
+Hot Picks:<a href="#">Pick_1</a>&nbsp;&nbsp;<a href="#">Pick_2</a>&nbsp;&nbsp;<a href="#">Pick_3</a>&nbsp;&nbsp;<a href="#">Pick_4</a>&nbsp;&nbsp;<a href="#">Pick_5</a>&nbsp;&nbsp;
+</p><br>
+<div style="margin-left:100px;" class="intro">
+<div style="float:left; margin-left: 100px;">
+<table style="border-right:2px solid #ccd9ff; border-left:2px solid black; margin-right:20px;">
+  <tr>
+    <td rowspan="2"><img src="images\sign_in.png"></td>
+    <td><a href="#">SIGN IN</a></td>
+  </tr>
+  <tr>
+    <td>New Here?<a href="#">Create Email Account</a></td>
+  </tr>
+</table></div><br><br><br><br><br><br>
+<div style="width:150px;height:50px; float:right; margin-right:94px; margin-top: -47px;">
+<table style="border-right:2px solid #ccd9ff;">
+  <tr>
+    <td rowspan="2"><img src="images\mail.png" align="left"></td>
+    <td><a href="#">MAIL</a></td>
+  </tr>
+  <tr>
+    <td>Check mail</td>
+  </tr>
+</table></div>
+</div>
+</div> <!--sub div 2 ends here-->
+</div><!--top part amin div ends here-->
+<!--2nd Main Div Middle Section-->
+<div style="clear:both;"><!--left div-->
+<div style="float:left; margin-left:150px; margin-right:30px; width:220px; margin-top:20px;">
+<table style="border:2px solid #ccd9ff; height:850px;" cellpadding="5px">
+<col width="60px">
+<col width="160px">
+<tr><td style="border-bottom:1px solid #ccd9ff;">YAHOO SITES!</td><td style="border-bottom:1px solid #ccd9ff;" align="right"><img src="images\edit_icon.png">Edit</td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\1.png"></td><td style="border-bottom:1px solid #ccd9ff;"><a href="#">Mail<a></td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\2.png"></td><td style="border-bottom:1px solid #ccd9ff;"><a href="#">Answers<a></td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\4.png"></td><td style="border-bottom:1px solid #ccd9ff;"><a href="#">Cricket<a></td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\5.png"></td><td style="border-bottom:1px solid #ccd9ff;"><a href="#">Dainik Jagran<a></td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\6.png"></td><td style="border-bottom:1px solid #ccd9ff;"><a href="#">Finance<a></td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\7.png"></td><td style="border-bottom:1px solid #ccd9ff;"><a href="#">Flickr<a></td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\8.png"></td><td style="border-bottom:1px solid #ccd9ff;"><a href="#">Games<a></td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\09.png"></td><td style="border-bottom:1px solid #ccd9ff;"><a href="#">Group<a></td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\9.gif"></td><td style="border-bottom:1px solid #ccd9ff;"><a href="#">Lifestyle<a></td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\010.png"></td><td style="border-bottom:1px solid #ccd9ff;"><a href="#">Local<a></td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\10.gif"></td><td style="border-bottom:1px solid #ccd9ff;"><a href="#">Travel<a></td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\11.png"></td><td style="border-bottom:1px solid #ccd9ff;"><a href="#">Messenger<a></td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\12.png"></td><td style="border-bottom:1px solid #ccd9ff;"><a href="#">Mobile<a></td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\13.png"></td><td style="border-bottom:1px solid #ccd9ff;"><a href="#">Movies<a></td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\14.png"></td><td style="border-bottom:1px solid #ccd9ff;"><a href="#">News<a></td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\015.png"></td><td style="border-bottom:1px solid #ccd9ff;"><a href="#">Omg!<a></td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\screen.gif"></td><td  style="border-bottom:1px solid #ccd9ff;"><a href="#">Screen<a></td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\marathi.gif"></td><td style="border-bottom:1px solid #ccd9ff;"><a href="#">Marathi<a></td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\malayalam.gif"></td><td style="border-bottom:1px solid #ccd9ff;"><a href="#">Malayalam<a></td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\bengali.gif"></td><td style="border-bottom:1px solid #ccd9ff;"><a href="#">Bengali<a></td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\kannada.gif"></td><td style="border-bottom:1px solid #ccd9ff;"><a href="#">Kannada<a></td></tr>
+<tr><td colspan="2"><a href="#" style="float:right;">More Yahoo Sites! &nbsp;</a></td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;">MY FAVOURITES</td><td style="border-bottom:1px solid #ccd9ff;" align="right"><img src="images\edit_icon.png">Edit</td>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\smallbusiness.gif"></td><td style="border-bottom:1px solid #ccd9ff;"><a href="#">Small Business<a></td></tr>
+<tr><td style="border-bottom:1px solid #ccd9ff;"><img src="images\"></td><td style="border-bottom:1px solid #ccd9ff;"><a href="#">Add Favourites<a></td></tr>
+<tr><td colspan="2" style="border-bottom:1px solid #ccd9ff;">FEATURED PARTNERS</td></tr>
+<tr><td><img src="images\stylefactor.gif"></td><td><a href="#">Style Factors<a></td></tr>
+</table>
+</div>
+</div>
+<!--middle div-->
+<div style="float:left; border:2px solid #ccd9ff; width:427px; height: 1028px; margin-right: 30px;  margin-top:20px;">
+<p><b>TOP STORIES<b></p>
+<div style="margin-right:30px;">
+	<ul id="newsslider2">
+		<li>
+			<a href="http://www.mmm.unifi.it/primo-piano/intervista-con-luca-farulli"><img src="graphics/luca-farulli-master-multimedia.jpg" width="82" height="30" alt="Luca Farulli" /></a>
+			<h3><a href="http://www.mmm.unifi.it/primo-piano/intervista-con-luca-farulli">Luca Farulli interview</a></h3>
+			<p>Luca Farulli, professor of Aesthetics at the Academy of Fine Arts of Venice, is the owner of the course of aesthetics of digital art and coordinator of the workshop for the Master of Arts and Multimedia <br /><a href="http://www.mmm.unifi.it/primo-piano/intervista-con-luca-farulli"> &raquo; read more</a></p>
+		</li>
+		<li>
+			<a href="http://www.mmm.unifi.it/interviste/intervista-con-diego-mencarelli"><img src="graphics/diego-mencarelli-master-multimedia.jpg" width="82" height="30" alt="Diego Mencarelli" /></a>
+			<h3><a href="http://www.mmm.unifi.it/interviste/intervista-con-diego-mencarelli" title="This should be the title text">Diego Mencarelli interview</a></h3>
+			<p>Diego Mencarelli, new media consultant at Unicoop Tirreno, co-teaches a course on human-machine interface design, in particular the module dedicated to accessibility and web W3C standards <br /><a href="http://www.mmm.unifi.it/interviste/intervista-con-diego-mencarelli">&raquo; read more</a></p>
+		</li>
+		<li>
+			<a class="title" href="http://www.mmm.unifi.it/interviste/intervista-con-luca-bonacorsi"><img src="graphics/luca-bonacorsi-master-multimedia.jpg" width="82" height="30" alt="Luca Bonacorsi" /></a>
+			<h3><a href="http://www.mmm.unifi.it/interviste/intervista-con-luca-bonacorsi">Luca Bonacorsi interview</a></h3>
+			<p>Luca Bonacorsi, consultant and expert training certified Adobe / Macromedia, is professor of Rich Internet Applications II, a course designed to learn of Adobe Flex <br /><a href="http://www.mmm.unifi.it/interviste/intervista-con-luca-bonacorsi">&raquo; read more</a></p>
+		</li>
+		<li>
+			<a  href="http://www.mmm.unifi.it/interviste/intervista-con-luigi-ciorciolini"><img src="graphics/luigi-ciorciolini-master-multimedia.jpg" width="82" height="30" alt="Luigi Ciorciolini" /></a>
+			<h3><a href="http://www.mmm.unifi.it/interviste/intervista-con-luigi-ciorciolini">Luigi Ciorciolini interview</a></h3>
+			<p>Luigi Ciorciolini, film and video maker, since different editions of the course is a professor of communication by images in the period of specialization in video post-production<br /><a href="http://www.mmm.unifi.it/interviste/intervista-con-luigi-ciorciolini">&raquo; read more</a></p>
+		</li>
+		<li>
+			<a href="http://www.mmm.unifi.it/interviste/intervista-con-luca-rosati"><img src="graphics/luca-rosati-master-multimedia.jpg" width="82" height="30" alt="Luca Rosati" /></a>
+			<h3><a href="http://www.mmm.unifi.it/interviste/intervista-con-luca-rosati">Luca Rosati interview.</a></h3>
+			<p>Luca Rosati is one of the leading experts on information architecture in Italy. Since two years is among the organizers of the Italian IA Summit and teaches a course on Information Architecture at the Master <br /><a href="http://www.mmm.unifi.it/interviste/intervista-con-luca-rosati">&raquo; read more</a></p>
+		</li>
+		<li>
+			<a href="http://www.mmm.unifi.it/interviste/intervista-con-filippo-casale"><img src="graphics/filippocasale-master-multimedia.jpg" width="82" height="30" alt="Filippo Casale" /></a>
+			<h3><a href="http://www.mmm.unifi.it/interviste/intervista-con-filippo-casale">Filippo Casale interview</a></h3>
+			<p>Filippo Casale is a professor of Maya from the first edition of the Master. Instructor certified for Autodesk Maya software, Filippo is one of the most successful 3D artist on the italian scene <br /><a href="http://www.mmm.unifi.it/interviste/intervista-con-filippo-casale">&raquo; read more</a></p>
+		</li>
+		<li>
+			<a href="http://www.mmm.unifi.it/news/intervista-con-tiziano-fruet"><img src="graphics/tiziano-fruet-master-multimedia1.jpg" width="82" height="30" alt="Tiziano Fruet" /></a>
+			<h3><a href="http://www.mmm.unifi.it/news/intervista-con-tiziano-fruet">Tiziano Fruet interview</a></h3>
+			<p>Tiziano Fruet is the new teacher of the course of Graphic Design II at the Master. Tiziano is Adobe Italy Guru  since 2004, Adobe Certified Expert and Adobe Certified Instructor in Photoshop, Illustrator and Freehand <br /><a href="http://www.mmm.unifi.it/news/intervista-con-tiziano-fruet">&raquo; read more</a></p>
+		</li>
+		<li>
+			<a href="http://www.mmm.unifi.it/interviste/intervista-con-sante-j-achille"><img src="graphics/sante-j-achille-master-multimedia-firenze.jpg" width="82" height="30" alt="Sante J. Achille" /></a>
+			<h3><a href="http://www.mmm.unifi.it/interviste/intervista-con-sante-j-achille">Sante J. Achille interview</a></h3>
+			<p>Sante J. Achilles is two years teaches a course on Search Engine Optimization. Sante is a professional with national and international experience in consulting for the search engines and web marketing <br /><a href="http://www.mmm.unifi.it/interviste/intervista-con-sante-j-achille">&raquo; read more</a></p>
+		</li>
+	</ul>
+</div><!--news-->
+
+<div style="height:180px;margin-top:5px;"><!--start of category-->
+<div style="width:425px; height:20px;border:2px solid #ccd9ff;"><!--horizontal bar-->
+<div style="border-right:1px solid #ccd9ff; width: 100px;height:20px;float:left;" onclick="cat1()" id="c1">
+<b>Category1</b> 
+</div>
+<div style="border-right: 1px solid #ccd9ff; width: 100px;height:20px;float:left;" onclick="cat2()" id="c2">
+<b>Category2</b> 
+</div>
+<div style="border-right:1px solid #ccd9ff; width: 100px;height:20px;float:left;" onclick="cat3()" id="c3">
+<b>Category3</b> 
+</div>
+<div style="border-rigth:1px solid #ccd9ff; width: 100px;height:20px;float:left;" onclick="cat4()" id="c4">
+<b>Category4</b> 
+</div>
+</div><!--End of Horizontal bar-->
+<p id="area" style="width:425px; height:160px; margin:-1px;">
+</p>
+</div><!--end of category-->
+
+<p><b>Anime Image Slider</b></p>
+<div class="w3-content" style="max-width:425px;position:relative;">
+
+<img class="mySlides" src="images/anime.jpg" style="width:425px;">
+<img class="mySlides" src="images/anime1.jpg" style="width:425px;">
+<img class="mySlides" src="images/anime2.jpg" style="width:425px;">
+<img class="mySlides" src="images/anime3.jpg" style="width:425px;">
+
+<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)"><</a>
+<a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">></a>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+</div><!--end of middle div tag-->
+
+<!--right div-->
+<div style=" margin-top:20px;"><!--start-->
+<div style="float:left; border:2px solid #ccd9ff; width:350px; height: 1028px; "><!--start of top div-->
+<div style="float:left;">Trending Local Searches</div>
+<div style="float:right;"><img src="images\yahoo_logo_small.png">Search</div>
+<div><!--trending searches-->
+<table style="border-bottom:1px solid #ccd9ff;">
+<tr>
+<td><img src="images\trending_1.jpg"></td>
+<td><img src="images\trending_2.jpg"></td>
+<td><img src="images\trending_3.jpg"></td>
+<td><img src="images\trending_4.jpg"></td>
+</tr>
+<tr>
+<td>Trending Search 1</td>
+<td>Trending Search 2</td>
+<td>Trending Search 3</td>
+<td>Trending Search 4</td>
+</tr>
+</table>
+</div><!--end of trending searches-->
+
+<div id="Ad" style="margin-top: 25px; margin-left:25px; margin-bottom:25px;"><!--for ads-->
+<img src="images\ad_3.png">
+</div><!--end of ads-->
+
+<div id="Vids" style="margin-top: 25px; margin-left:15px; margin-bottom:25px;"><!--for videos-->
+<video controls>
+  <source src="videos\video1.mp4" type="video/mp4">
+</video>
+</div><!--end of videos-->
+
+<div><!--for videos-->
+<div style="float:left; margin-right:150px; margin-left:15px; margin-top: 20px;">
+<img src="videos\video1.png" width="150px" style="position: absolute;" onclick="video1()"/>
+  <img src="videos\video_play_button.png" style="position: relative; top: 40px; left: 70px;"/>
+</div>
+<div style="float:left; margin-top:20px;">
+<img src="videos\video2.png" width="150px" style="position: absolute;" onclick="video2()">
+<img src="videos\video_play_button.png" style="position: relative; top: 40px; left: 70px;"/>
+</div>
+
+<div style="float:left; margin-right:150px; margin-left:15px; margin-top: 120px;">
+<img src="videos\sledgehammer.jpg" width="150px" style="position: absolute;" onclick="video3()"/>
+  <img src="videos\video_play_button.png" style="position: relative; top: 40px; left: 70px;"/>
+</div>
+<div style="float:left; margin-top:120px;">
+<img src="videos\whistlemaar.png" width="150px" height="114px" style="position: absolute;" onclick="video4()"/>
+  <img src="videos\video_play_button.png" style="position: relative; top: 40px; left: 70px"/>
+</div>
+</div><!--end of videos-->
+</div><!-- end of top div-->
+
+</div><!--end-->
+
+<!--starting of footer-->
+<footer>
+<div style="clear:both; border:2px solid #ccd9ff; float:left; margin-left:150px; width:1060px; margin-top:10px; " class="intro"><!--main div-->
+<p>YAHOO! SERVICES</p><br>
+<div style="float:left;margin-right:80px; margin-left:40px;"><!--sub div 1-->
+<li>Address Book</li>
+<li>Answers</li>
+<li>Autos</li>
+<li>Calendar</li>
+<li>Bengali</li>
+<li>Cricket</li>
+<li>Dainik Jagran</li>
+<li>Finance</li>
+</div><!--end of sub div 1-->
+
+<div style="float:left; margin-right:80px"><!--sub div 2-->
+<li>Flickr</li>
+<li>Games</li>
+<li>Groups</li>
+<li>Mail</li>
+<li>Marathi</li>
+<li>Malayalam</li>
+</div><!--end of sub div 2-->
+
+<div style="float:left;margin-right:80px"><!--sub div 3-->
+<li>Messenger</li>
+<li>Mobile</li>
+<li>Movies</li>
+<li>My Yahoo!</li>
+<li>News</li>
+<li>Omg!</li>
+</div><!--end of sub div 3-->
+
+<div style="float:left; margin-right:0px;"><!--sub div 4-->
+<li>Safety</li>
+<li>Dinamalar</li>
+<li>Tech*</li>
+<li>Toolbar</li>
+<li>Yahoo! IE9</li>
+<li>Yahoo! Firefox</li>
+</div><!--end of sub div 4-->
+
+
+<div style="float: right; margin-right:20px; margin-top: -80px;"><!--sub div 5-->
+<p><b>FOLLOW YAHOO!</b></p><br>
+<li>Follow us:<img src="images\fb_small.png"><img src="images\tw_small.png"><br>
+<p><b>YAHOO! FOR YOUR BUSINESS</b></p>
+<li>Advertise with us</li>
+<li>Domain Registration</li>
+<li>Search Marketing</li>
+<br>
+<p><b>ABOUT YAHOO!<b></p> 
+<li>Company info| Jobs</li>
+<li>Help|Send Feedback</li>
+</div><!--end of sub div 5-->
+</div><!--end of main div-->
+</footer>
+<!--end of footer-->
+</body>
+</html>
